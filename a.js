@@ -70,3 +70,46 @@
 // }
 
 // console.log(num);
+
+// 問題4 サイズｎの数列Ａの最大値/最小値はそれぞれいくつか？
+// 1≦n≦10000
+// ―1000000000≦A[i]≦1000000000
+// 線形探索
+// 数列は配列で管理
+// 暫定低最大値の初期値は入力の最小値以下
+// 暫定最初地の初期値は入力の最大値以上
+// ループ処理を用いて配列の要素を先頭から調べる
+// 要素を見ながら暫定最大値/最小値を更新
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+
+// const n = Number(input[0]);
+// const A = input[1].split(" ").map((x) => Number(x));
+
+// let maxNum = -1000000000;
+// let minNum = 1000000000;
+
+// // for (let i = 0; i<n ; i++) {
+// //   if (A[i] > maxNum) {
+// //     maxNum = A[i];
+// //   }
+// //   if (A[i] < minNum) {
+// //     minNum = A[i];
+// //   }
+// // }
+// // console.log(maxNum,minNum);
+
+// for (let value of A) {
+//   if (value > maxNum) {
+//     maxNum = value;
+//   }
+
+//   if (value < minNum) {
+//     minNum = value;
+//   }
+// }
+
+// console.log(maxNum, minNum);
+
+
