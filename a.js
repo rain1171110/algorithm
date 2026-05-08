@@ -112,4 +112,64 @@
 
 // console.log(maxNum, minNum);
 
+// サイズnの数列Aのk番目に大きい値はいくつか?
+// 1≦n≦10000
+// ―1000000000≦A[i]≦1000000000
+// A[i] ≠ A[j]
+// 線形探索使用する
+// 答え（ｋ番目に大きい値）を保存する変数ｘを用意して、入力の最大値より大きな値で初期化
+// 数列からｘ未満であるような値の最大値ｙを求め、ｘをｙで更新することをｋ回くりかえす。
+// 入力値
+// 5
+// -9 10 6 0 -3
+// 4
 
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+
+// const n = Number(input[0]);
+// const a = input[1].split(" ").map((x) => Number(x));
+// const k = Number(input[2]);
+
+// let maxNum = 1000000001;
+
+// for (let count = 0; count < k; count++) {
+//   let nextMaxNum = -1000000000;
+
+//   for (let value of a) {
+//     if (value < maxNum && value > nextMaxNum) {
+//       nextMaxNum = value;
+//     }
+//   }
+//   maxNum = nextMaxNum;
+// }
+// console.log(maxNum);
+
+// 重複判定の追加
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+
+const n = Number(input[0]);
+const a = input[1].split(" ").map((x) => Number(x));
+const k = Number(input[2]);
+
+const used = Array(n).fill(false);
+
+let answer = null;
+
+for (let count = 0; count < k; count++) {
+  let maxIndex = -1;
+
+  for (let i = 0; count < k; count++) {
+    if (used[i]) {
+      continue;
+    }
+
+    if (maxIndex === -1 || a[i] > a[maxIndex]) {
+      maxIndex = i;
+    }
+  }
+  used[maxIndex] = true;
+  answer = a[maxIndex];
+}
+console.log(answer);
