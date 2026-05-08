@@ -145,31 +145,45 @@
 // }
 // console.log(maxNum);
 
-// 重複判定の追加
-const fs = require("fs");
-const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+// // 重複判定の追加
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split("\n");
 
-const n = Number(input[0]);
-const a = input[1].split(" ").map((x) => Number(x));
-const k = Number(input[2]);
+// const n = Number(input[0]);
+// const a = input[1].split(" ").map((x) => Number(x));
+// const k = Number(input[2]);
 
-const used = Array(n).fill(false);
+// const used = Array(n).fill(false);
 
-let answer = null;
+// let answer = null;
 
-for (let count = 0; count < k; count++) {
-  let maxIndex = -1;
+// for (let count = 0; count < k; count++) {
+//   let maxIndex = -1;
 
-  for (let i = 0; count < k; count++) {
-    if (used[i]) {
-      continue;
-    }
+//   for (let i = 0; count < k; count++) {
+//     if (used[i]) {
+//       continue;
+//     }
 
-    if (maxIndex === -1 || a[i] > a[maxIndex]) {
-      maxIndex = i;
-    }
-  }
-  used[maxIndex] = true;
-  answer = a[maxIndex];
-}
-console.log(answer);
+//     if (maxIndex === -1 || a[i] > a[maxIndex]) {
+//       maxIndex = i;
+//     }
+//   }
+//   used[maxIndex] = true;
+//   answer = a[maxIndex];
+// }
+// console.log(answer);
+
+// 問題4 サイズｎの数列Ａの最大値/最小値はそれぞれいくつか？
+// 1≦n≦10000
+// ―1000000000≦A[i]≦1000000000
+// 線形探索
+// 数列は配列で管理
+// 暫定低最大値の初期値は入力の最小値以下
+// 暫定最初地の初期値は入力の最大値以上
+// ループ処理を用いて配列の要素を先頭から調べる
+// 要素を見ながら暫定最大値/最小値を更新
+
+
+
+
