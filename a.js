@@ -184,6 +184,39 @@
 // ループ処理を用いて配列の要素を先頭から調べる
 // 要素を見ながら暫定最大値/最小値を更新
 
+// 基礎問題① A 君の 1 年前の体重は 10 kg でしたが、現在は N kg です。 A 君の体重は何 kg 増えましたか？
+// 入力例 1 の場合
+// 30
+// 30 kg は 10 kg より 20 kg 増えているので
+// 20
+// と出力してください。
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+
+// const n = Number(input[0])
+
+// const wt = 10
+// let rwt = n-10
+// console.log(rwt)
 
 
+// あなたはカレンダーのプログラムを作成しています。そこで N 週間後が何日後かを表示する機能を作ることにしました。
+// N 週間後は何日後かを計算してください。
 
+// 例えば
+
+// 6
+// と入力された 1 週間は 7 日間なので 6 × 7
+// 42
+// と出力してください。
+
+const fs = require("fs");
+const input = fs.readFileSync(0,"utf-8").trim().split("\n");
+
+const n = Number(input[0]);
+
+const week = 7;
+const nWeek= n*week;
+
+console.log(nWeek);
