@@ -174,16 +174,6 @@
 // }
 // console.log(answer);
 
-// 問題4 サイズｎの数列Ａの最大値/最小値はそれぞれいくつか？
-// 1≦n≦10000
-// ―1000000000≦A[i]≦1000000000
-// 線形探索
-// 数列は配列で管理
-// 暫定低最大値の初期値は入力の最小値以下
-// 暫定最初地の初期値は入力の最大値以上
-// ループ処理を用いて配列の要素を先頭から調べる
-// 要素を見ながら暫定最大値/最小値を更新
-
 // 基礎問題① A 君の 1 年前の体重は 10 kg でしたが、現在は N kg です。 A 君の体重は何 kg 増えましたか？
 // 入力例 1 の場合
 // 30
@@ -200,7 +190,6 @@
 // let rwt = n-10
 // console.log(rwt)
 
-
 // あなたはカレンダーのプログラムを作成しています。そこで N 週間後が何日後かを表示する機能を作ることにしました。
 // N 週間後は何日後かを計算してください。
 
@@ -211,12 +200,35 @@
 // 42
 // と出力してください。
 
+// const fs = require("fs");
+// const input = fs.readFileSync(0,"utf-8").trim().split("\n");
+
+// const n = Number(input[0]);
+
+// const week = 7;
+// const nWeek= n*week;
+
+// console.log(nWeek);
+
+// 問題
+// X 円の商品を購入しようとしています。あなたは、手持ちの小銭で X 円ちょうどを支払おうとしています。
+// ここで言う小銭とは、500円硬貨、100円硬貨、50円硬貨、10円硬貨、5円硬貨、1円硬貨、のことを指し、すべての硬貨が十分な枚数あります。
+
+// 支払いで使う小銭の合計枚数を最も少なくしたとき、何枚の硬貨が必要になるかを出力してください。
+// 入力例 1 の場合、733 円の商品に対して、500円硬貨 1 枚、100円硬貨 2 枚、10円硬貨 3 枚、1 円硬貨 3 枚で支払うことができます。これが最少の小銭の合計枚数なので、9 と出力してください。
+
 const fs = require("fs");
-const input = fs.readFileSync(0,"utf-8").trim().split("\n");
+const input = fs.readFileSync(0, "utf-8").trim().split("\n");
 
-const n = Number(input[0]);
+let x = Number(input[0]);
 
-const week = 7;
-const nWeek= n*week;
+const coins = [500, 100, 50, 10, 5, 1];
 
-console.log(nWeek);
+let count = 0;
+
+for (const coin of coins) {
+  count += Math.floor(x / coin);
+  x = x % coin;
+}
+
+console.log(count);
