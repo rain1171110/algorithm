@@ -213,22 +213,80 @@
 // 問題
 // X 円の商品を購入しようとしています。あなたは、手持ちの小銭で X 円ちょうどを支払おうとしています。
 // ここで言う小銭とは、500円硬貨、100円硬貨、50円硬貨、10円硬貨、5円硬貨、1円硬貨、のことを指し、すべての硬貨が十分な枚数あります。
-
 // 支払いで使う小銭の合計枚数を最も少なくしたとき、何枚の硬貨が必要になるかを出力してください。
 // 入力例 1 の場合、733 円の商品に対して、500円硬貨 1 枚、100円硬貨 2 枚、10円硬貨 3 枚、1 円硬貨 3 枚で支払うことができます。これが最少の小銭の合計枚数なので、9 と出力してください。
 
-const fs = require("fs");
-const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split("\n");
 
-let x = Number(input[0]);
+// let x = Number(input[0]);
 
-const coins = [500, 100, 50, 10, 5, 1];
+// let count = 0;
 
-let count = 0;
+// const coins = [500, 100, 50, 10, 5, 1];
 
-for (const coin of coins) {
-  count += Math.floor(x / coin);
-  x = x % coin;
-}
+// for (let coin of coins) {
+//   count += Math.floor(x / coin);
+//   x = x % coin;
+// }
 
-console.log(count);
+// console.log(count);
+
+// const fs = require("false");
+// const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+
+// let x = Number(input[0]);
+
+// let count = 0;
+
+// const coins = [10000, 5000, 1000, 500, 100, 50, 10,5, 1];
+
+// for (let coin of coins) {
+//   count = count + Math.floor(x / coin);
+//   x = x % coin;
+// }
+// console.log(count);
+
+// 以下の形式で標準入力によって与えられます。
+// 文字列 s が 1 行で与えられます。
+
+
+// s
+
+// 入力値最終行の末尾に改行が１つ入ります。
+// 文字列は標準入力から渡されます。 標準入力からの値取得方法はこちらをご確認ください
+// 期待する出力
+// 入力された文字列をそのまま出力してください。また、出力の末尾には改行を入れてください。
+
+
+// s
+// 条件
+// すべてのテストケースにおいて、以下の条件をみたします。
+
+// ・s は数字または大文字・小文字のアルファベットからなる長さ 1 以上 10 以下の文字列
+
+// 入力例1
+// paiza
+
+// 出力例1
+// paiza
+
+// 入力例2
+// Paiza21
+
+// 出力例2
+// Paiza21
+
+// 入力例3
+// paiza813
+
+// 出力例3
+// paiza813
+
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0,"utf-8").trim().split("\n");
+
+// let s = input[0]
+// console.log(s)
+
