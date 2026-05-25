@@ -247,9 +247,9 @@
 // }
 // console.log(count);
 
-// 以下の形式で標準入力によって与えられます。
+//  問題
+//  以下の形式で標準入力によって与えられます。
 // 文字列 s が 1 行で与えられます。
-
 
 // s
 
@@ -257,7 +257,6 @@
 // 文字列は標準入力から渡されます。 標準入力からの値取得方法はこちらをご確認ください
 // 期待する出力
 // 入力された文字列をそのまま出力してください。また、出力の末尾には改行を入れてください。
-
 
 // s
 // 条件
@@ -283,10 +282,78 @@
 // 出力例3
 // paiza813
 
-
 // const fs = require("fs");
 // const input = fs.readFileSync(0,"utf-8").trim().split("\n");
 
 // let s = input[0]
 // console.log(s)
 
+// 問題　以下の形式で標準入力によって与えられます。
+// 文字列 s と t が 2 行で与えられます。
+// s
+// t
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0,"utf-8").trim().split("\n");
+// let s = input[0];
+// let t = input[1];
+// console.log(s)
+// console.log(t)
+
+//問題　 以下の形式で標準入力によって与えられます。
+// 半角スペースで区切られた文字列 s_1, s_2 が 1 行で与えられます。
+// s_1 s_2
+// 入力された文字列 s_1, s_2 をそれぞれ改行区切りで出力してください。
+// また、末尾に改行を入れ、余計な文字、空行を含んではいけません。
+// s_1
+// s_2
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+
+// let s_1 = input[0];
+// let s_2 = input[1];
+// console.log(s_1);
+// console.log(s_2);
+
+問題;
+// S
+// T
+// 入力値最終行の末尾に改行が１つ入ります。
+// 文字列は標準入力から渡されます。 標準入力からの値取得方法はこちらをご確認ください
+// 期待する出力
+// 答えの文字列を 2 行で出力してください。
+// S
+// T
+// 末尾に改行を入れ、余計な文字、空行を含んではいけません。
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0,"utf-8").trim().split("\n");
+
+// let s = input[0];
+// let t = input[1];
+// console.log(s)
+// console.log(t)
+
+// 問題
+// 整数 A, B が与えられます。A と B の差 D と積 P を半角スペース区切りで出力してください。
+// 入力される値
+// A B
+// 入力値最終行の末尾に改行が１つ入ります。
+// 文字列は標準入力から渡されます。 標準入力からの値取得方法はこちらをご確認ください
+// 期待する出力
+// 期待する結果 D と P を半角スペース区切り一行で出力してください。末尾に改行を入れ、余計な文字、空行を含んではいけません。
+// D P
+// 条件
+// すべてのテストケースにおいて、以下の条件をみたします。
+// ・ A, B は整数
+// ・ A, B は 0 以上 1,000 未満
+
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+
+let a = input[0];
+let b = input[1];
+const d = a - b;
+const p = a * b;
+console.log(d, p);
