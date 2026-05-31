@@ -349,11 +349,95 @@
 // ・ A, B は整数
 // ・ A, B は 0 以上 1,000 未満
 
-const fs = require("fs");
-const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(" ");
 
-let a = input[0];
-let b = input[1];
-const d = a - b;
-const p = a * b;
-console.log(d, p);
+// let a = input[0];
+// let b = input[1];
+// const d = a - b;
+// const p = a * b;
+// console.log(d, p);
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+
+// const a = input[0];
+// const b = input[1];
+
+// const d = a - b;
+// const p = a * b;
+// console.log(d, p);
+
+// 問題　整数 A, B, C が与えられます。以下のアルゴリズムを実行してください。
+// 変数 N を 0 で初期化する
+// N に A を足した値を N へ代入する
+// N に B をかけた値を N へ代入する
+// N を C で割ったあまりを N へ代入する
+// N を出力する
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+
+// const a = Number(input[0]);
+// const b = Number(input[1]);
+// const c = Number(input[2]);
+
+// let n = 0;
+// n = n + a;
+// n = n * b;
+// n = n % c;
+
+// console.log(n);
+
+// ある電車に a 人が乗っています。駅に到着した時に b 人が降りて新たに c 人が乗車する時、電車に乗っている乗客人数を求めてください。
+
+//問題　 入力される値
+// a b c
+
+// ・ 1 行目に 整数 a,b,c がそれぞれ半角スペース区切りで与えられます。
+
+// 入力値最終行の末尾に改行が１つ入ります。
+// 文字列は標準入力から渡されます。 標準入力からの値取得方法はこちらをご確認ください
+// 期待する出力
+// 電車に乗っている乗客人数を出力してください。
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+
+// const a = Number(input[0]);
+// const b = Number(input[1]);
+// const c = Number(input[2]);
+
+// let n = 0;
+// n = n + a;
+// n = n - b;
+// n = n + c;
+
+// console.log(n);
+
+// 文字列Sが与えられます。Sがpaizaと一致する場合はYESを、一致しない場合はNOを出力してください。
+
+// ▼　下記解答欄にコードを記入してみよう
+
+// 入力される値
+// S
+
+// 入力値最終行の末尾に改行が１つ入ります。
+// 文字列は標準入力から渡されます。 標準入力からの値取得方法はこちらをご確認ください
+// 期待する出力
+// YESまたはNOを出力してください。末尾に改行を入れ、余計な文字、空行を含んではいけません。
+// YES
+
+// または
+// NO
+
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+
+const s = input[0];
+
+if (s === "paiza") {
+  console.log("YES");
+} else {
+  console.log("NO");
+}
