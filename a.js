@@ -351,7 +351,6 @@
 
 // const fs = require("fs");
 // const input = fs.readFileSync(0, "utf-8").trim().split(" ");
-<<<<<<< HEAD
 
 // let a = input[0];
 // let b = input[1];
@@ -432,13 +431,12 @@
 // または
 // NO
 
-const fs = require("fs");
-const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split("\n");
 
-const s = input[0];
+// const s = input[0];
 
-if (s === "paiza") {
-=======
+// if (s === "paiza") {
 
 // let a = input[0];
 // let b = input[1];
@@ -577,16 +575,46 @@ if (s === "paiza") {
 // または
 // NO
 
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+
+// const a = Number(input[0]);
+// const b = Number(input[1]);
+// const c = Number(input[2]);
+
+// if (a * b <= c) {
+
+//   console.log("YES");
+// } else {
+//   console.log("NO");
+// }
+
+// 問題　ある占いでは、箱の中に 1~9 までのいずれかの数字が書かれている玉を取り出し、
+// その玉に書かれている数字から運勢を占います。玉に書かれている数字が 7 の時は大吉となります。
+// 占いで取り出した玉に書かれている数字が 1 つ与えられます。大吉かどうかを判定してください。;
+//入力される値 n
+// 1行目に取り出した玉に書かれている数字 n が入力されます。
+// 期待する出力
+// 大吉の場合は「Yes」、そうでない場合は「No」と 1 行に出力してください。
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+// const n = Number(input[0]);
+// if (n === 7) {
+//   console.log("Yes");
+// } else {
+//   console.log("No");
+// }
+
+// 問題　正の整数 N が与えられます。
+// 1 ~ N の整数を 1 から順に改行区切りで出力してください。
+// 入力される値 N
+//  正の整数 N が 1 行で与えられます。
+
 const fs = require("fs");
-const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+const input = fs.readFileSync(0,"utf-8").trim().split("/n");
 
-const a = Number(input[0]);
-const b = Number(input[1]);
-const c = Number(input[2]);
-
-if (a * b <= c) {
->>>>>>> 7f49a41 (# 2026-06-01 学習ログ)
-  console.log("YES");
-} else {
-  console.log("NO");
+const N = Number(input[0]);
+for (let i = 1; i<=n; i++){
+console.log(i);
 }
