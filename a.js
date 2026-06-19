@@ -611,10 +611,65 @@
 // 入力される値 N
 //  正の整数 N が 1 行で与えられます。
 
-const fs = require("fs");
-const input = fs.readFileSync(0,"utf-8").trim().split("/n");
+// const fs = require("fs");
+// const input = fs.readFileSync(0,"utf-8").trim().split("/n");
 
-const N = Number(input[0]);
-for (let i = 1; i<=n; i++){
-console.log(i);
-}
+// const N = Number(input[0]);
+// for (let i = 1; i<=n; i++){
+// console.log(i);
+// }
+
+//問題　 1 ~ 100 の整数に対して、3 と 5 の両方で割り切れるなら FizzBuzz を、 3 でのみ割り切れるなら
+// Fizz 、5 でのみ割り切れるなら Buzz を改行区切りで出力してください。
+// また、どちらでも割り切れない場合は、その数字を改行区切りで出力してください。
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split("\n");
+
+// for (let i = 1; i < 101; i++) {
+//   if (i % 3 == 0 && i % 5 == 0) {
+//     console.log("FizzBuzz");
+//   } else if (i % 3 == 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 == 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+// 　1 行で整数 813 を出力してください。
+// console.log(813);
+
+//　整数 8 と 13 をこの順番で出力してください。
+// また、整数 8 を出力した後と 13 を出力した後に改行をしてください。
+// console.log(8);
+// console.log(13);
+
+// 整数 8, 1, 3 をこの順に改行区切りで出力してください。
+// console.log(8);
+// console.log(1);
+// console.log(3);
+
+// 以下の 10 個の整数を改行区切りで出力してください。
+
+// const numbers = [813, 1, 2, 923874, 23648, 782356, 3256, 2342, 24324, 112];
+
+// for (let i=0; i<numbers.length;i++){
+//     console.log(numbers[i]);
+// }
+
+// 1 以上 1,000 以下のすべての整数を昇順に改行区切りで出力してください。
+
+// for (let i = 1; i < 1001; i++) {
+//   console.log(i);
+// }
+
+// 2 つの 1 を半角スペース区切りで出力してください。
+// console.log("1, 1");
+
+// 3 つの数値 8, 1, 3 を半角スペース区切りで出力してください。
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+const numbers = [8, 1, 3];
+    console.log(numbers.join(" "));
