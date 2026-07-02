@@ -669,7 +669,110 @@
 // console.log("1, 1");
 
 // 3 つの数値 8, 1, 3 を半角スペース区切りで出力してください。
-const fs = require("fs");
-const input = fs.readFileSync(0, "utf-8").trim().split(" ");
-const numbers = [8, 1, 3];
-    console.log(numbers.join(" "));
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(" ");
+// const numbers = [8, 1, 3];
+//     console.log(numbers.join(" "));
+
+// 1 から 10 までの数値をすべて、出力してください。
+// ただし、数値の後には必ず半角スペースを出力してください。
+// let result = "";
+// for (let i = 1; i <= 10; i++) {
+//   result += i + " ";
+// }
+
+// console.log(result);
+
+// 1 から 10 までの数値をすべて、半角スペース区切りで出力してください。
+//  ただし、末尾に半角スペースを出力してはいけません。
+
+// let result = "";
+// for (let i = 1; i <= 10; i++) {
+//   if (i === 10) {
+//     result += i;
+//   } else {
+//     result += i + " ";
+//   }
+// }
+// console.log(result);
+
+// 1 から 1,000 までの数値をすべて、半角スペース区切りで出力してください。
+// ただし、末尾に半角スペースを出力してはいけません。
+// let result = "";
+// for (let i = 1; i <= 1000; i++) {
+//   if (i === 1000) {
+//     result += i;
+//   } else {
+//     result += i + " ";
+//   }
+// }
+// console.log(result);
+
+// 文字列 paiza を出力してください。
+// console.log("paiza");
+
+// 文字列 paiza と learning を半角スペース区切りで出力してください。
+// console.log("paiza"+" "+"learning")
+
+// 2 つの文字列 S, T が入力されます。S, T を改行区切りで出力してください。
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+
+// const s = input[0];
+// const t = input[1];
+// console.log(s);
+// console.log(t);
+
+// 10 個の文字列 S_1, S_2, S_3, ..., S_10 が改行区切りで与えられます。
+// これらの文字列をすべて、半角スペース区切りで出力してください。
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+
+// let result = "";
+// for (let i = 0; i < 10; i++) {
+//   result += input[i];
+//   if (i < 9) {
+//     result += " ";
+//   }
+// }
+// console.log(result);
+
+// 10 個の文字列 S_1, S_2, S_3, ..., S_10 が半角スペース区切りで与えられます。
+// これらの文字列をすべて、改行区切りで出力してください。
+
+// const fs= require("fs");
+// const input = fs.readFileSync(0,"utf-8").trim().split(/\s+/);
+
+// let result= "";
+// for (let i = 0; i<10; i++) {
+//     result += input[i];
+//     if(i < 9){
+//         result += "\n";
+//     }
+// }
+// console.log(result);
+
+// 整数 N (N = 1 または 2) が入力されます。N = 1 の場合は 1 を、
+// N = 2 の場合は 1 と 2 を改行区切りで出力してください。
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+
+// const n = Number(input[0]);
+
+// let result = "";
+
+// for (let i = 1; i <= n; i++) {
+//   result += i;
+
+//   if (i < n) {
+//     result += "\n";
+//   }
+// }
+
+// console.log(result);
+
+// 整数 N が入力されます。1 から N までの数値をすべて、
+// 改行区切りで出力してください。
