@@ -776,3 +776,28 @@
 
 // 整数 N が入力されます。1 から N までの数値をすべて、
 // 改行区切りで出力してください。
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+
+// const n = Number(input[0]);
+// let result = "";
+
+// for (let i = 1; i <= n; i++) {
+//   result += i;
+//   if (i < n) {
+//     result += "\n";
+//   }
+// }
+
+// console.log(result);
+
+// 2 つの数値が半角スペース区切りで与えられます。
+// これらの数値をカンマ区切りで出力してください。
+
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+
+const n = Number(input[0]);
+const m = Number(input[1]);
+
+console.log(n + "," + m);
