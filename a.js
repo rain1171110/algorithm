@@ -794,10 +794,32 @@
 // 2 つの数値が半角スペース区切りで与えられます。
 // これらの数値をカンマ区切りで出力してください。
 
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+
+// const n = Number(input[0]);
+// const m = Number(input[1]);
+
+// console.log(n + "," + m);
+
+//  3 つの文字列が改行区切りで与えられます。
+// これらの文字列をバーティカルライン | 区切りで出力してください
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+
+// console.log(input.join("|"));
+
+//　 10 個の数値が半角スペース区切りで与えられます。これらの数値すべて受け取り、
+// そのまま出力してください。ただし、数値を出力した直後に必ずカンマを、
+// 末尾にはさらに改行も出力してください
 const fs = require("fs");
 const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
 
-const n = Number(input[0]);
-const m = Number(input[1]);
+let result = "";
 
-console.log(n + "," + m);
+for (let i = 0; i < 10; i++) {
+  const n = input[i];
+  result += n + ",";
+}
+
+console.log(result);
