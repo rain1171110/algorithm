@@ -316,7 +316,7 @@
 // console.log(s_1);
 // console.log(s_2);
 
-問題;
+// 問題;
 // S
 // T
 // 入力値最終行の末尾に改行が１つ入ります。
@@ -809,17 +809,38 @@
 
 // console.log(input.join("|"));
 
-//　 10 個の数値が半角スペース区切りで与えられます。これらの数値すべて受け取り、
-// そのまま出力してください。ただし、数値を出力した直後に必ずカンマを、
-// 末尾にはさらに改行も出力してください
-const fs = require("fs");
-const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+//　A 君は 1 日 N ページ問題集を進めます。A 君がこのペースで 100 日間、
+// 問題集を進めると 100 日後には何ページ終わりますか？
 
-let result = "";
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
 
-for (let i = 0; i < 10; i++) {
-  const n = input[i];
-  result += n + ",";
-}
+// const n = Number(input[0]);
+// let page = n * 100;
 
-console.log(result);
+// console.log(page);
+
+// あなたは鉛筆を箱買いしました。それぞれの箱には 1 ダースの鉛筆が入っています。
+// 合計で何ダースの鉛筆を買ったかが入力されるので、買った鉛筆の本数を出力してください。
+// 1 ダースは 12 本です。
+
+// 入力ｎ 例３ 出力例36本
+// 合計の本数をtotal,ダースをＮとした。
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+
+// const n = Number(input[0]);
+// let total = n*12;
+
+// console.log(total);
+
+// const fs = require("fs");
+// const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+
+// let total = 0;
+// for (let i = 0; i < n; i++) {
+//   total += 12;
+// }
+// console.log(total);
+
