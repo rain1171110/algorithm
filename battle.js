@@ -16,6 +16,7 @@
 const fs = require("fs");
 const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
 const n = Number(input[0]);
+
 let currentLevel = Number(input[1]);
 
 for (let i = 0; i < n; i++) {
