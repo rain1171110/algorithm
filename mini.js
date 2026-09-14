@@ -33,3 +33,27 @@
 // n 個の命令を入力される順に実行し終わった後の、変数 1, 2 の値を半角スペース区切りで 1 行に出力してください。
 
 // 最後は改行し、余計な文字、空行を含んではいけません。
+const fs = require("fs");
+const lines = fs.readFileSync(0, "utf-8").trim().split(/\n+/);
+
+
+let variable1 = 0;
+let variable2 = 0;
+
+const n = Number(lines[0]);
+
+for (let i = 1; i <= n; i++) {
+  const command = lines[i].split(" ");
+  if (command[0] === "SET") {
+    if (command[1] === "1") {
+      variable1 = Number(command[2]);
+    } else if (command[1] === "2") {
+      variable2 = Number(command[2]);
+    }
+  } else if (command[0] === "ADD") {
+    
+  } else if (command[0] === "SUB") {
+  }
+}
+
+console.log(variable1, variable2);
