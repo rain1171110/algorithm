@@ -45,9 +45,10 @@ let variable2 = 0;
 for (let i = 1; i <= n; i++) {
   const command = lines[i].split(" ");
   if (command[0] === "SET") {
-    if (command[1] === variable1) {
+    if (command[1] === "1") {
+      variable1 = Number(command[2]);
     } else {
-      (command[2]===variable2)
+      variable2 = Number(command[2]);
     }
   }
 }
