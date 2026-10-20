@@ -36,7 +36,6 @@
 
 for (let i = 1; i <= n; i++) {
   const command = lines[i].trim().split(" ");
-
   if (command[0] === "SET") {
     if (command[1] === "1") {
       variable1 = Number(command[2]);
@@ -44,8 +43,8 @@ for (let i = 1; i <= n; i++) {
       variable2 = Number(command[2]);
     }
   } else if (command[0] === "ADD") {
-    variable2 = variable1 + Number(command[2]);
+    variable2 = variable1 + Number(command[1]);
   } else if (command[0] === "SUB") {
-    variable2 = variable1 - Number(command[2]);
+    variable2 = variable1 - Number(command[1]);
   }
 }
