@@ -15,17 +15,9 @@
 const fs = require("fs");
 const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
 
-const n = Number(input[0]);
+const n =Number (input[0]);
+let currentLevel= Number(input[1]);
 
-let myLevel = Number(input[1]);
-const opponentLevels = input.slice(2, 2 + n).map(Number);
-
-for (const opponentLevel of opponentLevels) {
-  if (myLevel > opponentLevel) {
-    myLevel += Math.floor(opponentLevel / 2);
-  } else if (myLevel < opponentLevel) {
-    myLevel = Math.floor(myLevel / 2);
-  }
+for (let i = 0; i < n ;i++) {
+const opponentLevel = Number(input[i+2]);
 }
-
-console.log(myLevel);
