@@ -15,9 +15,16 @@
 const fs = require("fs");
 const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
 
-const n =Number (input[0]);
-let currentLevel= Number(input[1]);
+const n = Number(input[0]);
+let currentLevel = Number(input[1]);
 
-for (let i = 0; i < n ;i++) {
-const opponentLevel = Number(input[i+2]);
+for (let i = 0; i < n; i++) {
+  const opponentLevel = Number(input[i + 2]);
+  if (currentLevel > opponentLevel) {
+    currentLevel = currentLevel + Math.floor(opponentLevel / 2);
+  } else if (currentLevel < opponentLevel) {
+    currentLevel = Math.floor(currentLevel / 2);
+  }
+  console.log(`相手:${opponentLevel}, 更新後:${currentLevel}`);
 }
+console.log(currentLevel);
